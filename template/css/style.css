@@ -1,0 +1,504 @@
+/* Globle Settings */
+body {
+    background-color: #bac1be;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 45px auto auto auto 45px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 18px;
+    color: #393539;
+}
+
+/* Skip to mian */
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #393539;
+    background-color:#bac1be;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 4px solid #393539;
+    text-align: center;
+    z-index: 999;
+}
+
+/* Navigation bar */
+nav {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    background-color: #5a5c67;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+}
+
+nav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #bac1be;
+    color: #393539;
+}
+
+nav a.current {
+    background-color: #C288A1;
+    color: #050505;
+}
+
+/* Index Headline */
+#greet {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    background-image: url("../images/background.jpg");
+    background-color: #bac1be;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#greet div {
+    padding: 35px 0;
+    position: sticky;
+    top: 140px;
+    text-transform: uppercase;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 34px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#greet div:first-of-type {
+    animation: 5s 1 alternate showup;
+}
+
+#greet div:last-of-type {
+    width: auto;
+    animation: 5s 1 alternate reveal;
+}
+
+#greet div:last-of-type span {
+    margin-left: 0px;
+    animation: 5s 1 alternate slidein;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: auto;
+    }
+
+    80% {
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    #greet div:first-of-type {
+        animation: none;
+    }
+
+    #greet div:last-of-type {
+        animation: none;
+    }
+
+    #greet div:last-of-type span {
+        animation: none;
+    }
+}
+
+/* Main content */
+main {
+    grid-row: 3;
+    grid-column: 1 / -1;
+    justify-self: center;
+    line-height: 1.5;
+    width: 100%;
+}
+
+h1 {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.section {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.type {
+    color: #4B4D57
+}
+
+.content {
+    padding: 50px 0px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.content ul ul {
+    list-style-type: circle;
+    margin-left: 25px;
+}
+
+.media {
+    width: 100%;
+}
+
+/* Aside */
+.card {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: center;
+    margin-bottom: 80px;
+    max-width: 300px;
+    height: auto;
+    text-align: center;
+    color: #393539;
+    font-size: 18px;
+}
+
+.name {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.avatar {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.contact {
+    border: none;
+    padding: 8px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card i {
+    color: #5a5c67;
+    display: block;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #5a5c67;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+}
+
+.card i:hover {
+    color: #9e6e83;
+}
+
+.card button:hover {
+    background-color: #9e6e83;
+}
+
+/* Gallery */
+.gallery {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    margin-top: 44px;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+}
+
+/* Figure */
+.gallery figure {
+    position: relative;
+    justify-content: center;
+    align-self: center;
+}
+
+.gallery figure img {
+    display: block;
+    width: 100%;
+    border: 2px solid;
+    box-shadow: 6px 4px 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    width: 100%;
+    height: 60px;
+    justify-self: center;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 16px;
+}
+
+.gallery figure:hover .overlay {
+    opacity: 1;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    text-align: center;
+}
+
+.thin {
+    max-width: 80%;
+}
+
+.wide {
+    max-width: 80%;
+}
+
+/* Footer */
+footer {
+    grid-row: 5;
+    grid-column: 1 / -1;
+    height: 45px;
+    width: 100%;
+    color: #fff;
+    background-color: #5a5c67;
+}
+
+/* Contact Form */
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 70px 1fr 50px;
+    gap: 10px;
+}
+
+input, label {
+    display: block;
+}
+
+.formtitle {
+    width: 100%;
+    padding-top: 0px;
+    font-size: 24px;
+    text-align: center;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #393539;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    resize: vertical;
+}
+
+textarea {
+    height: 200px;
+}
+
+.firstname {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.lastname {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.sub {
+    grid-row: 2;
+    grid-column: 1 / -1;
+}
+
+.con {
+    grid-row: 3;
+    grid-column: 1 / -1;
+}
+
+input[type=submit] {
+    grid-row: 4;
+    grid-column: 1 / -1;
+    justify-self: center;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+    background-color: #5a5c67;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    max-height: 40px;
+    font-size: 18px;
+}
+
+input[type=submit]:hover {
+    background-color: #9e6e83;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        grid-template-rows: 45px auto auto 45px;
+        grid-template-columns: 350px auto;
+    }
+
+    /* Main content */
+    main {
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    .media {
+        max-width: 500px;
+    }
+
+    .gallery {
+        flex-flow: row wrap;
+    }
+
+    .thin {
+        max-width: 80%;
+    }
+
+    .wide {
+        max-width: 80%;
+    }
+
+    /* Aside */
+    .card {
+        grid-row: 3;
+        grid-column: 1;
+        justify-self: center;
+        padding: 80px 0px;
+        margin: 0px 10px;
+    }
+
+    /* Footer */
+    footer {
+        grid-row: 4;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    body {
+        grid-template-rows: 45px auto auto 45px;
+        grid-template-columns: 450px auto;
+    }
+
+    /* Main content */
+    .thin {
+        max-width: 300px;
+    }
+
+    .wide {
+        max-width: 600px;
+    }
+
+    /* Aside */
+    .card {
+        margin: 0px 60px;
+    }
+}

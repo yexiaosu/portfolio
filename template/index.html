@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- All of the meta data for the page belongs in the header tag -->
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NHBTDD2QHH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NHBTDD2QHH');
+    </script>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.ico" >
+    <link rel="stylesheet" href="css/html5reset.css" >
+    <link rel="stylesheet" href="css/style.css" >
+    <title>Home</title>
+  </head>
+
+  <body>
+    <header>
+      <a class="skip-main" href="#main">Skip to main content</a>
+      <nav>
+        <ul>
+          <li><a class="current" href="./index.html">Home</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside id="greet" aria-labelledby="greet" aria-label="greet">
+      <div class="text">
+        <div>Hey!</div>
+        <div> 
+          <span>I'm Lan!</span>
+        </div>
+      </div>
+    </aside>
+    <main id="main">
+      <h1>About Me</h1>
+      <div class="content">
+        <p>
+          I’m a first-year graduate student at UMSI, on the User-Centered Agile Development path. I majored in Electrical and Computer Engineering during my undergraduate learning process at Shanghai Jiao Tong University. Also, I have some experience in web development and data analytics because of a related internship.
+        </p>
+        <p>
+          I have many hobbies, including drawing, playing video games, making assembled models, etc. I am quite interested in drawing, though I have no professional training. For me, this hobby is my way of decompression and a manifestation of my love for life. If you are interested in my works, you can go to Gallery to see some of them.
+        </p>
+      </div>
+      <h1 class="formtitle">Contact Form</h1>
+      <form  action="https://formspree.io/f/xayklaqn" method="POST">
+        <div class="firstname">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
+        </div>
+        <div class="lastname">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+        </div>
+        <div class="sub">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject of contact" required>
+        </div>
+        <div class="con">
+          <label for="content">Content</label>
+          <textarea id="content" name="content" placeholder="Write what you want to say to me!" required></textarea>
+        </div>
+
+        <input type="submit" value="Submit">
+      </form>
+    </main>
+    <aside id="card" class="card" aria-labelledby="card" aria-label="card">
+      <div>
+        <img src="images/avatar.jpg" class="avatar" alt="my avatar" >
+        <div class="name">Lan Wang</div>
+        <div>Graduate Student</div>
+        <div>Ex Intern at Bilibili Inc.</div>
+        <div>M.S. in Information Science at UMich</div>
+        <div>B.S.E. in ECE at SJTU</div>
+        <div class="contact">
+          <i onclick="window.open('weixin://dl/chat?yexiaosu_busu','_blank')" class="fa fa-weixin"></i>
+          <i onclick="window.open('https://github.com/yexiaosu','_blank')" class="fa fa-github"></i>
+          <i onclick="window.open('https://www.linkedin.com/in/lan-wang-a753801a4/','_blank')" class="fa fa-linkedin"></i>
+          <i onclick="window.open('mailto:wanglanl@umich.edu','_blank')" class="fa fa-envelope"></i>
+        </div>
+        <button onclick="window.open('https://drive.google.com/file/d/19LAhycFy8dc7FXljWr1fb1zAPQAuVpjU/view?usp=sharing','_blank')">Resume</button>
+      </div>
+    </aside>
+    <footer>
+      <div>&copy; 2022</div>
+    </footer>
+  </body>
+</html>

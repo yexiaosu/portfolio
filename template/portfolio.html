@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- All of the meta data for the page belongs in the header tag -->
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NHBTDD2QHH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NHBTDD2QHH');
+    </script>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.ico" >
+    <link rel="stylesheet" href="css/html5reset.css" >
+    <link rel="stylesheet" href="css/style.css" >
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <a class="skip-main" href="#main">Skip to main content</a>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a class="current" href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Portfolio</h1>
+      <div class="content">
+        <div>
+          <h2 class="title">Break the Bricks (Web Game)</h2>
+          <div class="time">06/2020</div>
+          <div class="type">Team Project</div>
+          <ul>
+            <li>
+              Make a Break the Bricks web game with Elm with the other three
+              teammates.
+            </li>
+            <li>
+              Design and add unique game mechanics and story to it, such as:
+              <ul>
+                <li>Store System</li>
+                <li>Skill System</li>
+                <li>Boss Room, in which we add elements of STG</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="title">Rebirth (Web Game)</h2>
+          <div class="time">06/2020</div>
+          <div class="type">Team Project</div>
+          <ul>
+            <li>
+              Make a 2D interactive suspense RPG with Elm with the other three
+              teammates.
+            </li>
+            <li>Draw all the characters and scenes.</li>
+            <li>Provide the initial outline of the story.</li>
+            <li>Be responsible for the visual effects of the game (use CSS).</li>
+          </ul>
+          <figure>
+            <img class="media" src="images/rebirth.jpg" alt="rebirth" >
+          </figure>
+          <video controls class="media">
+            <source src="videos/rebirth_trailer.mp4" type="video/mp4" >
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
+        <div>
+          <h2 class="title">
+            Generating Conventional Identifiers by Pretrained Language Model
+          </h2>
+          <div class="time">03/2021-09/2021</div>
+          <div class="type">Participation in Research Program (PRP) of SJTU</div>
+          <ul>
+            <li>Learn basic knowledge about language models.</li>
+            <li>
+              Apply Bert to complete the basic requirements of this program.
+            </li>
+            <li>Reflect on the potential problems and possible improvements.</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="title">Mumsh (a self-made shell)</h2>
+          <div class="time">09/2021</div>
+          <div class="type">Individual Project</div>
+          <ul>
+            <li>Learn basic knowledge about shell.</li>
+            <li>
+              Write a self-made shell in C that supports comprehensive syntax and
+              some built-in commands.
+            </li>
+            <li>Mumsh performs similar to Bash.</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="title">LemonDB (A simple database with multithreading)</h2>
+          <div class="time">10/2021-11/2021</div>
+          <div class="type">Team Project</div>
+          <ul>
+            <li>Learn basic knowledge about multithreading.</li>
+            <li>Cooperate with other three teammates.</li>
+            <li>Implement queries in C++.</li>
+            <li>Utilize multithreading to speed up calculation.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <aside class="card">
+      <div>
+        <img src="images/avatar.jpg" class="avatar" alt="my avatar" >
+        <div class="name">Lan Wang</div>
+        <div>Graduate Student</div>
+        <div>Ex Intern at Bilibili Inc.</div>
+        <div>M.S. in Information Science at UMich</div>
+        <div>B.S.E. in ECE at SJTU</div>
+        <div class="contact">
+          <i onclick="window.open('weixin://dl/chat?yexiaosu_busu','_blank')" class="fa fa-weixin"></i>
+          <i onclick="window.open('https://github.com/yexiaosu','_blank')" class="fa fa-github"></i>
+          <i onclick="window.open('https://www.linkedin.com/in/lan-wang-a753801a4/','_blank')" class="fa fa-linkedin"></i>
+          <i onclick="window.open('mailto:wanglanl@umich.edu','_blank')" class="fa fa-envelope"></i>
+        </div>
+        <button onclick="window.open('https://drive.google.com/file/d/19LAhycFy8dc7FXljWr1fb1zAPQAuVpjU/view?usp=sharing','_blank')">Resume</button>
+      </div>
+    </aside>
+
+    <footer>&copy; 2022</footer>
+  </body>
+</html>
