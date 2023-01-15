@@ -1,0 +1,33 @@
+.nav_container {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    background-color: #5a5c67;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    z-index: 2;
+}
+
+.nav_container ul {
+    display: flex;
+    justify-content: right;
+}
+
+.nav_container a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav_container a:hover {
+    background-color: #bac1be;
+    color: #393539;
+}
+
+.nav_container li.active {
+    background-color: #C288A1;
+    color: #050505;
+}

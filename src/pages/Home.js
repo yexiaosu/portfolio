@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import Card from '../components/card/Card';
+
 function Home() {
   return (
+    <>
+        <Card></Card>
     <main id="main">
         <h1>About Me</h1>
         <div className="content">
@@ -32,6 +36,7 @@ function Home() {
           <input type="submit" defaultValue="Submit" />
         </form>
     </main>
+    </>
   );
 }
 

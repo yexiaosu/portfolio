@@ -1,67 +1,89 @@
 import React from 'react';
 const Project = () =>{
   return (
-    <div id="main">
-        <h1>Experience &amp; Education</h1>
+    <main id="main">
+        <h1>Portfolio</h1>
         <div className="content">
-          <h2 className="section">Experience</h2>
           <div>
-            <h3 className="title">Bilibili Inc.</h3>
-            <div className="time">12/2021-04/2022</div>
-            <div className="type">Server-side development intern</div>
+            <h2 className="title">Break the Bricks (Web Game)</h2>
+            <div className="time">06/2020</div>
+            <div className="type">Team Project</div>
             <ul>
               <li>
-                Joined Star Project Department, working on the web developing for
-                the international version of operation management platform.
+                Make a Break the Bricks web game with Elm with the other three
+                teammates.
               </li>
               <li>
-                Implemented the interfaces for front-end communicating with the
-                databases.
+                Design and add unique game mechanics and story to it, such as:
+                <ul>
+                  <li>Store System</li>
+                  <li>Skill System</li>
+                  <li>Boss Room, in which we add elements of STG</li>
+                </ul>
               </li>
-              <li>
-                Completed the user interfaces for the operation management platform
-                by using existed components and writing JavaScript.
-              </li>
-              <li>
-                Designed and developed a way to manage and use current supported
-                languages during writing interfaces, which was easy to maintain.
-              </li>
-              <li>Organized and wrote some documents for current work.</li>
             </ul>
-            <figure>
-              <img className="media" src="images/bilibili.jpg" alt="bilibili" />
-            </figure>
           </div>
           <div>
-            <h3 className="title">Sharewinfo</h3>
-            <div className="time">08/2020, 08/2021</div>
-            <div className="type">Data analytics intern</div>
+            <h2 className="title">Rebirth (Web Game)</h2>
+            <div className="time">06/2020</div>
+            <div className="type">Team Project</div>
             <ul>
-              <li>Learn basic knowledge about database, SQL, and PowerBI.</li>
-              <li>Complete some small practice projects about data analysis.</li>
+              <li>
+                Make a 2D interactive suspense RPG with Elm with the other three
+                teammates.
+              </li>
+              <li>Draw all the characters and scenes.</li>
+              <li>Provide the initial outline of the story.</li>
+              <li>Be responsible for the visual effects of the game (use CSS).</li>
             </ul>
             <figure>
-              <img className="media" src="images/sharewinfo.jpg" alt="sharewinfo" />
+              <img className="media" src="images/rebirth.jpg" alt="rebirth" />
             </figure>
-          </div>
-          <h2 className="section">Education</h2>
-          <div>
-            <h3 className="title">University of Michigan, Ann Arbor, MI</h3>
-            <div className="time">08/2022 - Present</div>
-            <div className="type">Master of Science in Information</div>
+            <video controls className="media">
+              <source src="videos/rebirth_trailer.mp4" type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
           </div>
           <div>
-            <h3 className="title">Shanghai Jiao Tong University, Shanghai, China</h3>
-            <div className="time">09/2019 - Present</div>
-            <div className="type">B.S.E. in Electrical and Computer Engineering</div>
+            <h2 className="title">
+              Generating Conventional Identifiers by Pretrained Language Model
+            </h2>
+            <div className="time">03/2021-09/2021</div>
+            <div className="type">Participation in Research Program (PRP) of SJTU</div>
+            <ul>
+              <li>Learn basic knowledge about language models.</li>
+              <li>
+                Apply Bert to complete the basic requirements of this program.
+              </li>
+              <li>Reflect on the potential problems and possible improvements.</li>
+            </ul>
           </div>
           <div>
-            <h3 className="title">Qibao High School, Shanghai, China</h3>
-            <div className="time">09/2016 - 06/2019</div>
-            <div className="type">High School</div>
+            <h2 className="title">Mumsh (a self-made shell)</h2>
+            <div className="time">09/2021</div>
+            <div className="type">Individual Project</div>
+            <ul>
+              <li>Learn basic knowledge about shell.</li>
+              <li>
+                Write a self-made shell in C that supports comprehensive syntax and
+                some built-in commands.
+              </li>
+              <li>Mumsh performs similar to Bash.</li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="title">LemonDB (A simple database with multithreading)</h2>
+            <div className="time">10/2021-11/2021</div>
+            <div className="type">Team Project</div>
+            <ul>
+              <li>Learn basic knowledge about multithreading.</li>
+              <li>Cooperate with other three teammates.</li>
+              <li>Implement queries in C++.</li>
+              <li>Utilize multithreading to speed up calculation.</li>
+            </ul>
           </div>
         </div>
-      </div>
+      </main>
   );
 }
 export default Project;
