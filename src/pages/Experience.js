@@ -1,7 +1,7 @@
 import React from 'react';
 const Experience = () =>{
   return (
-    <div id="main">
+    <main id="main">
         <h1>Experience &amp; Education</h1>
         <div className="content">
           <h2 className="section">Experience</h2>
@@ -61,7 +61,7 @@ const Experience = () =>{
             <div className="type">High School</div>
           </div>
         </div>
-      </div>
+      </main>
   );
 }
 export default Experience;
