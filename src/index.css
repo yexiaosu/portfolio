@@ -1,8 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/* reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,7 +19,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -45,4 +40,32 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* variables */
+:root {
+  --color-bg: #bac1be;
+  --color-bg-variant: #5a5c67;
+  --color-primary: #9e6e83;
+  --color-dark: #393539;
+  --color-light: #ffffff;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-ms: 90%;
+}
+
+/* global */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 45px auto auto auto 45px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 18px;
+  color: var(--color-dark);
 }
