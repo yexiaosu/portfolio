@@ -3,7 +3,7 @@ import "./navbar.css"
 
 export default function Navbar() {
   return (
-    <nav className="nav_container">
+    <nav className="container nav_container">
       <ul>
         <CustomLink to="/" className="nav_link">Home</CustomLink>
         <CustomLink to="/experience" className="nav_link">Experience</CustomLink>
