@@ -3,7 +3,7 @@ import "./navbar.css"
 
 export default function Navbar() {
   return (
-    <nav className="container nav_container">
+    <nav className="nav_container">
       <ul>
         <CustomLink to="/" className="nav_link">Home</CustomLink>
         <CustomLink to="/experience" className="nav_link">Experience</CustomLink>
@@ -18,7 +18,7 @@ function CustomLink({ to, children, ...props }) {
   const isActive = useMatch({ path: resolvedPath.pathname, end: true })
 
   return (
-    <li className={isActive ? "active" : ""}>
+    <li className={isActive ? "active grow" : "grow"}>
       <Link to={to} {...props}>
         {children}
       </Link>
