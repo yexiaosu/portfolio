@@ -1,7 +1,11 @@
 import React from 'react';
+import Card from '../components/card/Card';
+
 const Project = () =>{
   return (
-    <main id="main">
+    <>
+    <Card></Card>
+        <main id="main">
         <h1>Portfolio</h1>
         <div className="content">
           <div>
@@ -84,6 +88,7 @@ const Project = () =>{
           </div>
         </div>
       </main>
+    </>
   );
 }
 export default Project;

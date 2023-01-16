@@ -1,6 +1,10 @@
 import React from 'react';
+import Card from '../components/card/Card';
+
 const Experience = () =>{
   return (
+    <>
+    <Card></Card>
     <main id="main">
         <h1>Experience &amp; Education</h1>
         <div className="content">
@@ -62,6 +66,7 @@ const Experience = () =>{
           </div>
         </div>
       </main>
+    </>
   );
 }
 export default Experience;
