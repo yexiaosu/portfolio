@@ -1,0 +1,29 @@
+.skills_container {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 2rem;
+}
+
+.skills_detail {
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-bg-variant);
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.skills_detail:hover {
+    background-color: var(--color-bg-variant);
+    border-color: transparent;
+    color: var(--color-light);
+    cursor: default;
+}
+
+.skills_detail {
+    display: flex;
+    gap: 1rem;
+}
+
+.skills_detail_icon {
+    margin-top: 6px;
+}

@@ -44,15 +44,18 @@ table {
 
 /* variables */
 :root {
-  --color-bg: #bac1be;
-  --color-bg-variant: #5a5c67;
-  --color-primary: #9e6e83;
-  --color-dark: #393539;
+  --color-bg: #c5c1c0;
+  --color-bg-variant: #1a2930;
+  --color-primary: #f7ce3e;
+  --color-secondary: #8C5C03;
+  --color-dark: #0a1612;
   --color-light: #ffffff;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-ms: 90%;
+
+  --transition: all 400ms ease;
 }
 
 /* global */
@@ -67,5 +70,48 @@ body {
   grid-template-rows: 45px auto auto auto 45px;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 18px;
+  line-height: 1.5;
   color: var(--color-dark);
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+.text_light {
+  color: var(--color-light);
+}
+
+a {
+  transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-primary);
 }
