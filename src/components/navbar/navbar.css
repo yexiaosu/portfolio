@@ -2,7 +2,7 @@
     grid-row: 1;
     grid-column: 1 / -1;
     background-color: transparent;
-    position: fixed;
+    position: absolute;
     width: 100%;
     overflow: hidden;
     top: 0;

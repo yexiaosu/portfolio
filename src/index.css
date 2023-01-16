@@ -66,17 +66,26 @@ html {
 body {
   background-color: var(--color-bg);
   min-height: 100%;
-  display: grid;
-  grid-template-rows: 45px auto auto auto 45px;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: var(--color-dark);
 }
 
+#root {
+  display: grid;
+  grid-template-rows: 45px auto auto auto 45px;
+}
+
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
+}
+
+.body_part {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  display: grid;
 }
 
 h1, h2, h3, h4, h5 {

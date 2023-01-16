@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from '../components/card/Card';
 import Skills from '../components/skill/Skill';
+import "./page.css";
 
 function Home() {
   return (

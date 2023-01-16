@@ -3,7 +3,7 @@ import {BsPatchCheckFill} from "react-icons/bs"
 
 export default function Skills() {
     return (
-      <div>
+      <div className="skills">
         <h1>Skills</h1>
         <div className="skills_container">
             <Skill name="HTML" exp="advanced"></Skill>

@@ -1,8 +1,8 @@
 .card {
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
     justify-self: center;
-    margin-bottom: 80px;
+    margin: 50px 0;
     max-width: 300px;
     height: auto;
     text-align: center;
@@ -13,7 +13,7 @@
 .name {
     width: 90%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 20px;
     text-transform: uppercase;
     font-family: 'EB Garamond', serif;
     font-weight: bold;
@@ -35,7 +35,7 @@
 }
 
 .card i {
-    color: #5a5c67;
+    color: var(--color-bg-variant);
     display: block;
 }
 
@@ -46,7 +46,7 @@ button {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #5a5c67;
+    background-color: var(--color-bg-variant);
     text-align: center;
     cursor: pointer;
     width: 50%;
@@ -54,9 +54,9 @@ button {
 }
 
 .card i:hover {
-    color: #9e6e83;
+    color: var(--color-primary);
 }
 
 .card button:hover {
-    background-color: #9e6e83;
+    background-color: var(--color-primary);
 }

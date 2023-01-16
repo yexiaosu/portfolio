@@ -1,7 +1,15 @@
+.skills {
+    margin-top: 20px;
+}
+
 .skills_container {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-gap: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .skills_detail {

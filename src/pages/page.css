@@ -1,0 +1,52 @@
+main {
+    grid-row: 3;
+    grid-column: 1 / -1;
+    justify-self: center;
+    line-height: 1.5;
+    width: 100%;
+}
+
+h1 {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.section {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.type {
+    color: #4B4D57
+}
+
+.content {
+    padding: 20px 0px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.content ul ul {
+    list-style-type: circle;
+    margin-left: 25px;
+}
+
+.media {
+    width: 100%;
+}
