@@ -13,7 +13,7 @@ export default function ProjectContent() {
         <ProjectItem img={IM1} alt="Haunted Gifts" play="https://focs.ji.sjtu.edu.cn/silverfocs/demo/2020/p1team4/" title="Exocist: Haunted Gifts" intro="A web game of breaking bricks implemented with Elm, which is combined with STG."></ProjectItem>
         <ProjectItem img={IM2} alt="Rebirth" play="https://focs.ji.sjtu.edu.cn/silverfocs/demo/2020/p2team4/" demo="https://drive.google.com/file/d/1JvxEWI42o_TBDhQd42Tyss33I6gDPSeH/view?usp=sharing" title="Rebirth" intro="A 2D interactive suspense RPG implemented with Elm."></ProjectItem>
         <ProjectItem img={IM3} alt="Mumsh" git="https://github.com/yexiaosu/VE482/tree/main/project/p1/src" title="Mumsh" intro="A self-made Bash like shell in C that supports comprehensive syntax and built-in commands."></ProjectItem>
-        <ProjectItem img={IM4} alt="DocNow" demo="https://www.figma.com/proto/LVrumGRfHhGzgAQ8nPPIar/SI582_Wireframes_Group-7_Final-Version?node-id=9%3A3&starting-point-node-id=9%3A3" prototype="https://www.figma.com/file/LVrumGRfHhGzgAQ8nPPIar/SI582_Wireframes_Group-7_Final-Version?node-id=0%3A1&t=eHTSq5dBRJg3mxla-1" title="DocNow" intro="A prototype for an online doctor visit app provides users with immediate and reliable medical care services."></ProjectItem>
+        <ProjectItem img={IM4} alt="DocNow" demo="https://drive.google.com/file/d/1RFEyT8iG6iGOX20T6sOLLXsR6D7poE3M/view?usp=sharing" prototype="https://www.figma.com/proto/LVrumGRfHhGzgAQ8nPPIar/SI582_Wireframes_Group-7_Final-Version?node-id=9%3A3&starting-point-node-id=9%3A3" title="DocNow" intro="A prototype for an online doctor visit app provides users with immediate and reliable medical care services."></ProjectItem>
         </div>
       </div>
     )
@@ -30,16 +30,16 @@ function ProjectItem(props) {
       <p>{props.intro}</p>
       <div className='project_button_container'>
           {play &&
-            <IoGameControllerSharp size={28} className="project_icon" onClick={() => open(play)}></IoGameControllerSharp>
+            <CustomIcon icon={IoGameControllerSharp} url={play}></CustomIcon>
           }
           {git &&
-            <BsGithub size={28} className="project_icon" onClick={() => open(git)}></BsGithub>
+            <CustomIcon icon={BsGithub} url={git}></CustomIcon>
           }
           {demo &&
-            <BsFillPlayBtnFill size={28} className="project_icon" onClick={() => open(demo)}></BsFillPlayBtnFill>
+            <CustomIcon icon={BsFillPlayBtnFill} url={demo}></CustomIcon>
           }
           {prototype &&
-            <IoLogoFigma size={28} className="project_icon" onClick={() => open(prototype)}></IoLogoFigma>
+            <CustomIcon icon={IoLogoFigma} url={prototype}></CustomIcon>
           }
       </div>
     </div>
@@ -50,3 +50,8 @@ const open = (link) => {
   window.open(link,'_blank');
 }
 
+function CustomIcon(props) {
+  return (
+    <props.icon size={28} className="project_icon" onClick={() => open(props.url)}/>
+)
+}
