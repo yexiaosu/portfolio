@@ -55,3 +55,15 @@ button {
 .card button:hover {
     background-color: var(--color-primary);
 }
+
+@media screen and (min-width:768px) {
+
+}
+  
+@media screen and (min-width:1024px) {
+    .card {
+        grid-row: 1;
+        grid-column: 1;
+        justify-self: center;
+    }
+}

@@ -3,16 +3,20 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: 1rem;
+    row-gap: 2rem;
+    justify-items: center;
 }
 
 .project_item {
     width: auto;
+    max-width: 400px;
     background-color: transparent;
-    padding: 1rem;
+    overflow: hidden;
     border: 1px solid var(--color-bg-variant);
     border-radius: 5px;
     transition: var(--transition);
     box-shadow: 3px 3px 3px var(--color-bg-variant);
+    position: relative;
 }
 
 .project_item:hover {
@@ -22,15 +26,42 @@
     cursor: default;
 }
 
-.project_img img {
-    border-radius: 5px;
+.project_des {
+    padding: 1rem;
+    margin-bottom: 60px;
+}
+
+.project_img {
     overflow: hidden;
+    height: 200px;
     width: 100%;
     max-width: 400px;
 }
 
+.project_img img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
 .project_button_container {
     display: flex;
+    position: absolute;
+    bottom: 0;
     gap: 1rem;
     margin-top:10px;
+    padding: 1rem;
+}
+
+@media screen and (min-width:768px) {
+    .project_container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+}
+  
+@media screen and (min-width:1580px) {
+    .project_container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    }
 }

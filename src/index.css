@@ -51,7 +51,7 @@ table {
   --color-dark: #0a1612;
   --color-light: #ffffff;
 
-  --container-width-lg: 75%;
+  --container-width-lg: 90%;
   --container-width-md: 86%;
   --container-width-ms: 90%;
 
@@ -78,7 +78,7 @@ body {
 }
 
 .container {
-  width: var(--container-width-lg);
+  width: var(--container-width-ms);
   margin: 0 auto;
 }
 
@@ -121,6 +121,17 @@ a {
   transition: var(--transition);
 }
 
-a:hover {
-    color: var(--color-primary);
+@media screen and (min-width:768px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .container {
+    width: var(--container-width-lg);
+    grid-template-columns: 450px auto;
+    gap: 2rem;
+    margin-top: 30px;
+  }
 }
