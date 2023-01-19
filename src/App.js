@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar"
 import Home from "./pages/Home"
 import Experience from "./pages/Experience"
 import Project from "./pages/Project"
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/portfolio" element={<Project />} />
         </Routes>
       </div>
+      <Footer></Footer>
     </>
   )
 }

@@ -50,6 +50,8 @@ table {
   --color-secondary: #8C5C03;
   --color-dark: #0a1612;
   --color-light: #ffffff;
+  --color-dark-secondary: #494949;
+  --color-light-secondary: #939393;
 
   --container-width-lg: 90%;
   --container-width-md: 86%;
@@ -61,10 +63,12 @@ table {
 /* global */
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   background-color: var(--color-bg);
+  height: 100%;
   min-height: 100%;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 18px;
@@ -74,7 +78,8 @@ body {
 
 #root {
   display: grid;
-  grid-template-rows: 45px auto auto auto 45px;
+  grid-template-rows: 50px 1fr auto;
+  min-height: 100%;
 }
 
 .container {

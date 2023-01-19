@@ -52,7 +52,7 @@
 }
 
 .timestamp {
-    color: var(--color-secondary);
+    color: var(--color-dark-secondary);
     position: relative;
     width: 100px;
     font-size: 12px;
@@ -60,7 +60,7 @@
 
 .item_subtitle {
     font-size: 15px;
-    color: var(--color-bg-variant);
+    color: var(--color-dark-secondary);
 }
 
 .item_content {
