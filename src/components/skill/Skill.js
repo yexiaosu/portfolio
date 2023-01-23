@@ -11,6 +11,7 @@ export default function Skills() {
             <Skill name="JavaScript" exp="experienced"></Skill>
             <Skill name="SQL" exp="experienced"></Skill>
             <Skill name="React" exp="experienced"></Skill>
+            <Skill name="Django" exp="experienced"></Skill>
             <Skill name="Python" exp="experienced"></Skill>
             <Skill name="Golang" exp="intermediate"></Skill>
             <Skill name="C" exp="experienced"></Skill>
