@@ -10,12 +10,13 @@ export default function Skills() {
             <Skill name="CSS" exp="advanced"></Skill>
             <Skill name="JavaScript" exp="experienced"></Skill>
             <Skill name="SQL" exp="experienced"></Skill>
+            <Skill name="React" exp="experienced"></Skill>
             <Skill name="Python" exp="experienced"></Skill>
             <Skill name="Golang" exp="intermediate"></Skill>
             <Skill name="C" exp="experienced"></Skill>
             <Skill name="C++" exp="advanced"></Skill>
-            <Skill name="MATLAB" exp="experienced"></Skill>
-            <Skill name="Verilog" exp="experienced"></Skill>
+            <Skill name="MATLAB" exp="intermediate"></Skill>
+            <Skill name="Verilog" exp="intermediate"></Skill>
         </div>
       </div>
     )
