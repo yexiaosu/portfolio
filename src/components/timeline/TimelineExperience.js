@@ -1,13 +1,52 @@
-import "./timeline.css"
+import './timeline.css'
 
-export default function TimelineExperience() {
+export default function TimelineExperience () {
   return (
-    <div className="timeline_container">
-      <ul className="timeline">
+    <div className='timeline_container'>
+      <ul className='timeline'>
         <TimelineItem
-          time="12/2021-04/2022"
-          title="Bilibili Inc."
-          subtitle="Web development intern"
+          time='05/2023-08/2023'
+          title='Naive Systems Ltd.'
+          subtitle='Software development intern'
+        >
+          <ul>
+            <li>
+              Participated in the front-end and back-end development of the
+              software security and compliance automation product (NaiveSystems
+              Analyze) in a team of 12 members.
+            </li>
+            <li>
+              Participated in product design review with UX designers and
+              managers once a week.
+            </li>
+            <li>
+              Made 5 new pages of the web App of NaiveSystems Analyze with
+              TypeScript and React.
+            </li>
+            <li>
+              Implemented several new features of existing pages of the web App,
+              such as supporting GitHub repository upload and displaying code
+              snippets in the analysis report.
+            </li>
+            <li>
+              Optimized some layout of web page elements and structure of the
+              web App front-end code to enhance user experience, compatibility,
+              execution efficiency and scalability.
+            </li>
+            <li>
+              Developed the back-end functionality to support GitHub repository
+              upload with Golang.
+            </li>
+            <li>
+              Refactored 4 APIs with Golang to support a newly introduced
+              database and made the code easy to maintain and expand.
+            </li>
+          </ul>
+        </TimelineItem>
+        <TimelineItem
+          time='12/2021-04/2022'
+          title='Bilibili Inc.'
+          subtitle='Web development intern'
         >
           <ul>
             <li>
@@ -41,9 +80,9 @@ export default function TimelineExperience() {
           </ul>
         </TimelineItem>
         <TimelineItem
-          time="08/2020, 08/2021"
-          title="Sharewinfo"
-          subtitle="Data analytics intern"
+          time='08/2020, 08/2021'
+          title='Sharewinfo'
+          subtitle='Data analytics intern'
         >
           <ul>
             <li>Learn basic knowledge about database, SQL, and PowerBI.</li>
@@ -52,16 +91,16 @@ export default function TimelineExperience() {
         </TimelineItem>
       </ul>
     </div>
-  );
+  )
 }
 
-function TimelineItem({ children, ...props }) {
+function TimelineItem ({ children, ...props }) {
   return (
-    <li className="timeline_item">
-      <div className="timestamp">{props.time}</div>
-      <h3 className="item_title">{props.title}</h3>
-      <div className="item_subtitle">{props.subtitle}</div>
-      <div className="item_content">{children}</div>
+    <li className='timeline_item'>
+      <div className='timestamp'>{props.time}</div>
+      <h3 className='item_title'>{props.title}</h3>
+      <div className='item_subtitle'>{props.subtitle}</div>
+      <div className='item_content'>{children}</div>
     </li>
-  );
+  )
 }

@@ -19,7 +19,7 @@ export default function Card() {
             <CustomIcon icon={faLinkedin} url="https://www.linkedin.com/in/lan-wang-a753801a4/"></CustomIcon>
             <CustomIcon icon={faEnvelope} url="mailto:wanglanl@umich.edu"></CustomIcon>
           </div>
-          <button onClick={() => open("https://drive.google.com/file/d/127VmeL9YynzvfaLtaC0niasQPwLwZvrI/view?usp=sharing")}>Resume</button>
+          <button onClick={() => open("https://drive.google.com/file/d/1Ym9IhJHTRlOV5t70upz2Zt619DGhEInV/view?usp=sharing")}>Resume</button>
         </div>
       </aside>
     )

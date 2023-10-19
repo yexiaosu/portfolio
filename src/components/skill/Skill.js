@@ -6,16 +6,19 @@ export default function Skills() {
       <div className="skills">
         <h1>Skills</h1>
         <div className="skills_container">
+            <Skill name="C++" exp="advanced"></Skill>
             <Skill name="HTML" exp="advanced"></Skill>
             <Skill name="CSS" exp="advanced"></Skill>
             <Skill name="JavaScript" exp="experienced"></Skill>
-            <Skill name="SQL" exp="experienced"></Skill>
+            <Skill name="TypeScript" exp="experienced"></Skill>
             <Skill name="React" exp="experienced"></Skill>
-            <Skill name="Django" exp="experienced"></Skill>
             <Skill name="Python" exp="experienced"></Skill>
-            <Skill name="Golang" exp="intermediate"></Skill>
-            <Skill name="C" exp="experienced"></Skill>
-            <Skill name="C++" exp="advanced"></Skill>
+            <Skill name="Golang" exp="experienced"></Skill>
+            <Skill name="SQL" exp="experienced"></Skill>
+            <Skill name="Unity" exp="experienced"></Skill>
+            <Skill name="C#" exp="experienced"></Skill>
+            <Skill name="Django" exp="intermediate"></Skill>
+            <Skill name="C" exp="intermediate"></Skill>
             <Skill name="MATLAB" exp="intermediate"></Skill>
             <Skill name="Verilog" exp="intermediate"></Skill>
         </div>

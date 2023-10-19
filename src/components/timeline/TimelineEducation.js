@@ -11,7 +11,7 @@ export default function TimelineEducation() {
           >
           </TimelineItem>
           <TimelineItem
-            time="09/2019 - Present"
+            time="09/2019 - 08/2023"
             title="Shanghai Jiao Tong University, Shanghai, China"
             subtitle="B.S.E. in Electrical and Computer Engineering"
           >
