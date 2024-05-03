@@ -1,4 +1,5 @@
-import { IoGameControllerSharp, IoLogoFigma, IoIosDocument } from 'react-icons/io5'
+import { IoGameControllerSharp, IoLogoFigma } from 'react-icons/io5'
+import { IoIosDocument } from 'react-icons/io'
 import { BsGithub, BsFillPlayBtnFill } from 'react-icons/bs'
 import './project.css'
 import IM1 from '../../assets/haunted gifts.png'
@@ -97,7 +98,8 @@ function ProjectItem (props) {
   const git = props.git,
     demo = props.demo,
     play = props.play,
-    prototype = props.prototype
+    prototype = props.prototype,
+    doc = props.doc
   return (
     <div className='project_item'>
       <div className='project_img'>
